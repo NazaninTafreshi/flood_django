@@ -1,29 +1,19 @@
-# Securing a Containerized Django Application with Let's Encrypt
+# Flood Django
 
-## Want to learn how to build this?
+This is a very simple project. The structure of the project coppied from https://testdriven.io/blog/django-lets-encrypt/. 
 
-Check out the [post](https://testdriven.io/blog/django-lets-encrypt/).
 
-## Want to use this project?
+## How to run
 
-### Let's Encrypt Staging
+You can create your virtual environment and use the following comman, the project tested on python 3.10.
 
-1. Rename *.env.staging-sample* to *.env.staging*, *.env.staging.db-sample* to *.env.staging.db*, and *.env.staging.proxy-companion-sample* to *.env.staging.proxy-companion*. Update the environment variables.
-1. Build the images and run the containers:
+```
+pip install -r .\requirements.txt
+python manage.py collectstatic --no-input --clear
+python manage.py migrate
+```
 
-    ```sh
-    $ docker-compose -f docker-compose.staging.yml up -d --build
-    ```
+## Sample images
 
-    Test it out.
-
-### Let's Encrypt Production
-
-1. Rename *.env.prod-sample* to *.env.prod*, *.env.prod.db-sample* to *.env.prod.db*, and *.env.prod.proxy-companion-sample* to *.env.prod.proxy-companion*. Update the environment variables.
-1. Build the images and run the containers:
-
-    ```sh
-    $ docker-compose -f docker-compose.prod.yml up -d --build
-    ```
-
-    Test it out.
+![alt text](https://raw.githubusercontent.com/NazaninTafreshi/flood_django/master/home.jpg)
+![alt text](https://raw.githubusercontent.com/NazaninTafreshi/flood_django/master/station.jpg)
