@@ -1,6 +1,7 @@
 # Flood Django
 
-This is a very simple project. The structure of the project coppied from https://testdriven.io/blog/django-lets-encrypt/. 
+This is a very simple project.
+The structure of the project coppied from https://testdriven.io/blog/django-lets-encrypt/. 
 
 
 ## How to run
