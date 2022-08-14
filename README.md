@@ -6,7 +6,7 @@ The structure of the project coppied from https://testdriven.io/blog/django-lets
 
 ## How to run
 
-You can create your virtual environment and use the following comman, the project tested on python 3.10.
+You can create your virtual environment and use the following commands, the project tested on python 3.10.
 
 ```
 pip install -r .\requirements.txt
