@@ -9,9 +9,9 @@ You can create your virtual environment and use the following comman, the projec
 
 ```
 pip install -r .\requirements.txt
-python manage.py runserver 8000
 python manage.py collectstatic --no-input --clear
 python manage.py migrate
+python manage.py runserver 8000
 ```
 
 ## Sample images
